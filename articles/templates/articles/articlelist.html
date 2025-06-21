@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <h1>Article List</h1>
+    <div class="container">
+        <h1>Article List</h1>
     {% for article in articles %}
     <h2>
         <a href="#">{{ article.title }}</a>
@@ -20,5 +21,6 @@
         {{article.date}}
     </p>
     {% endfor %}
+    </div>
 </body>
 </html>
