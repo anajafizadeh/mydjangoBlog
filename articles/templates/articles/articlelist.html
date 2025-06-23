@@ -8,7 +8,7 @@ articles
     <h1>Article List</h1>
 {% for article in articles %}
 <h2>
-    <a href="#">{{ article.title }}</a>
+    <a href="{% url 'articles:detail' slug=article.slug %}">{{ article.title }}</a>
 </h2>
 <p>
     {{article.snippet}}
